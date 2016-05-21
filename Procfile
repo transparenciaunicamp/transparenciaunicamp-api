@@ -1,1 +1,1 @@
-web: gunicorn api_transp_unicamp.wsgi --log-file -
+web: gunicorn api.wsgi --log-file -

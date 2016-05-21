@@ -1,5 +1,35 @@
-.env
-.ropeproject/
-db.sqlite3
+# Caches, compiled, compressed, logs and databases
+*.db
 *.pyc
-__pycache__/
+*.log
+
+# coverage
+.coverage
+.coveragerc
+htmlcov/
+cover/
+
+# bower and processed assets
+findaconf/assets
+findaconf/bower
+
+# dev tools, ide etc.
+.env
+.floo
+.flooignore
+.idea
+.vagrant/
+.ropeproject
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashesa
+ehthumbs.db
+Thumbs.db
+*.*~
+*~

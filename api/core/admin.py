@@ -1,5 +1,5 @@
 from django.contrib import admin
-from api_transp_unicamp.core.models import (
+from api.core.models import (
     Institute, Document, Category, Item, Transaction
 )
 

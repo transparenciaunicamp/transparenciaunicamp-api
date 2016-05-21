@@ -1,5 +1,5 @@
 from django.test import TestCase
-from api_transp_unicamp.core.models import Category, Item
+from api.core.models import Category, Item
 
 
 class TestCreation(TestCase):
