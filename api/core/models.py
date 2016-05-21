@@ -3,7 +3,7 @@ from django.db import models
 class Institute(models.Model):
     title = models.CharField('Nome', max_length=140)
     description = models.TextField('Descrição', blank=True)
-    parent = models.ForeignKey('self', null=True)
+    parent = models.ForeignKey('self', blank=True, null=True)
 
     def __str__(self):
         return self.title
@@ -31,7 +31,7 @@ class Document(models.Model):
 class Category(models.Model):
     title = models.CharField('Nome', max_length=140)
     description = models.TextField('Descrição', blank=True)
-    parent = models.ForeignKey('self', null=True)
+    parent = models.ForeignKey('self', blank=True, null=True)
 
     def __str__(self):
         return self.title
