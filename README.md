@@ -1,4 +1,6 @@
-# API Transparência Unicamp 
+# API Transparência Unicamp
+
+Admin interface available at http://transparenciaunicamp-api.herokuapp.com/admin/
 
 ## Install
 
