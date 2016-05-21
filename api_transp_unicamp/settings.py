@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'test_without_migrations',
     'django_extensions',
-    'api-transp-unicamp.core',
+    'api_transp_unicamp.core',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -55,7 +55,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'api-transp-unicamp.urls'
+ROOT_URLCONF = 'api_transp_unicamp.urls'
 
 TEMPLATES = [
     {
@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'api-transp-unicamp.wsgi.application'
+WSGI_APPLICATION = 'api_transp_unicamp.wsgi.application'
 
 
 # Database
