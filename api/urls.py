@@ -15,56 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from rest_framework import routers, serializers, viewsets
-
-from api.core.models import Institute, Document, Category, Item
-
-
-# Serializers define the API representation.
-class InstituteSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Institute
-        fields = ('title', 'description', 'parent')
-
-
-class DocumentSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Document
-        fields = ('title', 'description', 'institute')
-
-
-class CategorySerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Category
-        fields = ('title', 'description', 'parent')
-
-
-class ItemSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Item
-        fields = ('title', 'description', 'value')
-
-
-# ViewSets define the view behavior.
-class InstituteViewSet(viewsets.ModelViewSet):
-    queryset = Institute.objects.all()
-    serializer_class = InstituteSerializer
-
-
-class DocumentViewSet(viewsets.ModelViewSet):
-    queryset = Document.objects.all()
-    serializer_class = DocumentSerializer
-
-
-class CategoryViewSet(viewsets.ModelViewSet):
-    queryset = Category.objects.all()
-    serializer_class = CategorySerializer
-
-
-class ItemViewSet(viewsets.ModelViewSet):
-    queryset = Item.objects.all()
-    serializer_class = ItemSerializer
-
+from rest_framework import routers
+from api.core.views import (InstituteViewSet, DocumentViewSet,
+                            CategoryViewSet, ItemViewSet)
 
 # Routers provide an easy way of automatically determining the URL conf.
 router = routers.DefaultRouter()
