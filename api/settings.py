@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'test_without_migrations',
     'django_extensions',
     'api.core.apps.CoreConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -85,6 +86,13 @@ DATABASES = {
     'default': config('DATABASE_URL', default=default_dburl, cast=dburl)
 }
 
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
