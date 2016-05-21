@@ -4,9 +4,7 @@
 
 ### Requirements
 
-We use [Django](http://djangoproject.com) in the backend.
-
-That said these are the requirements basically [Python](http://python.org) 3.5 with `pip` ([virtualenv](http://virtualenv.readthedocs.org) recommended).
+We use [Django](http://djangoproject.com) in the backend. That said the basic requirement is [Python](http://python.org) 3.5 with `pip` ([virtualenv](http://virtualenv.readthedocs.org) recommended).
 
 ### Dependencies
 
