@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'test_without_migrations',
     'django_extensions',
-    'api_transp_unicamp.core',
+    'api_transp_unicamp.core.apps.CoreConfig',
 ]
 
 MIDDLEWARE_CLASSES = [
