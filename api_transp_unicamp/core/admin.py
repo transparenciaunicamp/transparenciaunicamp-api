@@ -1,6 +1,6 @@
 from django.contrib import admin
 from api_transp_unicamp.core.models import (
-    Institute, Document, Category, Item
+    Institute, Document, Category, Item, Transaction
 )
 
 
@@ -24,3 +24,4 @@ admin.site.register(Institute, InstituteModelAdmin)
 admin.site.register(Document, DocumentModelAdmin)
 admin.site.register(Category, CategoryModelAdmin)
 admin.site.register(Item, ItemModelAdmin)
+admin.site.register(Transaction)

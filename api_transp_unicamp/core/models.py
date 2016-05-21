@@ -55,3 +55,15 @@ class Item(models.Model):
     class Meta:
         verbose_name = 'Item'
         verbose_name_plural = 'Itens'
+
+
+class Transaction(models.Model):
+    credit = models.ForeignKey('Item', verbose_name='Crédito', related_name='credit')
+    debt = models.ForeignKey('Item', verbose_name='Débito', related_name='debt')
+
+    def __str__(self):
+        return '{} - {}'.format(str(self.credit), str(self.debt))
+
+    class Meta:
+        verbose_name = 'Transação'
+        verbose_name_plural = 'Transações'
