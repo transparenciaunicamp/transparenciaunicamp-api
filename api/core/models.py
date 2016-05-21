@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class Institute(models.Model):
     title = models.CharField('Nome', max_length=140)
     description = models.TextField('Descrição', blank=True)
@@ -12,7 +11,6 @@ class Institute(models.Model):
     class Meta:
         verbose_name = 'Instituto'
         verbose_name_plural = 'Institutos'
-
 
 class Document(models.Model):
     title = models.CharField('Nome', max_length=140)
